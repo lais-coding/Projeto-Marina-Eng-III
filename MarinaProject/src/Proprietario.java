@@ -3,8 +3,13 @@ public class Proprietario {
 	
 	private String nomeProprietario;
 	private String foneProprietario;
-	private Apartamento []apartamentos;
+	private String cpfProprietario;
 	
+	public Proprietario(String nome, String fone, String cpf) {
+		this.nomeProprietario = nome;
+		this.foneProprietario = fone;
+		this.setCpfProprietario(cpf);
+	}
 	
 	public String getNomeProprietario() {
 		return nomeProprietario;
@@ -18,13 +23,13 @@ public class Proprietario {
 	public void setFoneProprietario(String foneProprietario) {
 		this.foneProprietario = foneProprietario;
 	}
-	public Apartamento [] getApartamentos() {
-		return apartamentos;
+
+	public String getCpfProprietario() {
+		return cpfProprietario;
 	}
-	public void setApartamentos(Apartamento [] apartamentos) {
-		this.apartamentos = apartamentos;
+
+	public void setCpfProprietario(String cpfProprietario) {
+		this.cpfProprietario = cpfProprietario;
 	}
-	
-	
 
 }

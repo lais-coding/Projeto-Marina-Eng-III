@@ -1,18 +1,15 @@
 
 public class Morador {
 
-	
 	private String nomeMorador;
 	private String foneMorador;
-	private Apartamento numApt;
+	private String cpfMorador;
 	
-	public Apartamento getNumApt() {
-		return numApt;
+	public Morador(String nome, String fone, String cpf) {
+		this.nomeMorador = nome;
+		this.foneMorador = fone;
+		this.setCpfMorador(cpf);
 	}
-	public void setNumApt(Apartamento numApt) {
-		this.numApt = numApt;
-	}
-	
 	
 	public String getNomeMorador() {
 		return nomeMorador;
@@ -25,6 +22,14 @@ public class Morador {
 	}
 	public void setFoneMorador(String foneMorador) {
 		this.foneMorador = foneMorador;
+	}
+
+	public String getCpfMorador() {
+		return cpfMorador;
+	}
+
+	public void setCpfMorador(String cpfMorador) {
+		this.cpfMorador = cpfMorador;
 	}
 	
 	
